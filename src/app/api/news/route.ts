@@ -14,7 +14,7 @@ type newTitleInfo =  {
 export async function GET(req: NextApiRequest){
     
     
-    const response = await fetch(url);
+    const response = await fetch(url,{cache:'no-cache'});
 
     const html = await response.text();
 

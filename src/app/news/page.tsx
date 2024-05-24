@@ -80,7 +80,7 @@ function Cards({params}:cardProp){
 
 const DataFetcher =async ()=>{
 
-    const result = await fetch("http://localhost:3000/api/news");
+    const result = await fetch("http://localhost:3000/api/news",{cache:'no-cache'});
 
     return result.json();
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Top from './components/Top';
  
 export const metadata: Metadata = {
   title: 'AniWorld',
@@ -7,8 +8,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
-
-    </main>
+    <div>
+      <Top/>
+    </div>
   );
 }
